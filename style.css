@@ -60,7 +60,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 #btn-container{
-    margin-top:50px;
     justify-content: space-around;
 }
 button{
@@ -75,4 +74,10 @@ button{
     padding: 10px 20px;
     border-radius: 30px;
     color: #fff;
+}
+.wrapper #output{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(1, 30, 80);
+    margin-bottom:15px !important;
 }
