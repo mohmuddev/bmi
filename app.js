@@ -6,6 +6,7 @@ btn.addEventListener('click', function(){
     //select input values
     const mass = document.querySelector("#weight").value
     const height = document.querySelector("#Height").value
+    const Pointer = document.querySelector(".pointer");
 
     //calculate BMI
     const BMI = mass / (height * height);
@@ -16,4 +17,10 @@ btn.addEventListener('click', function(){
 
     //Output BMI result
     document.querySelector("#output").innerHTML = "Your BMI is " + " " + result;
+
+    // conditionals
+    if(result < 18.5){
+        Pointer.classList.add("underweight");
+    }
+
 });
