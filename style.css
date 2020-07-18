@@ -72,6 +72,11 @@ button{
     cursor: pointer;
     color: #0369D9;
 }
+.wrapper a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 25px;
+}
 .submit-btn{
   background-color: rgb(56, 125, 255);
     padding: 10px 20px;

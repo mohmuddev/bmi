@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Mohamud Dev">
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Mohamud Dev" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css"
+    />
+
     <title>BMI</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="wrapper">
-        <h3>Check your body mass index (BMI)</h3>
-      <form action="#">
-          <div class="rows">
-              <span class="label"><label for="">Your Weight (kg)</label></span>
-              <span><input type="number" step="0.01" min="0" id="weight"> </span>
-          </div>
-          <div class="rows">
-            <span class="label"><label for="">Your Height (m)</label></span>
-            <span><input type="number" min="infnit" step="0.01" id="Height"></span>
-        </div>
-        <h3 id="output"></h3>
-        <div id="btn-container">
-            <button class="submit-btn">Calculate</button>
-            <button type="reset">Clear</button>
-        </div>
-      </form>
-      <img src="./assets/bmi.png" alt="bmi" id="indicator">
-      <img src="./assets/pointer.png" alt="pointer" class="pointer">
+      <h3>Check your body mass index (BMI)</h3>
+      <!-- <form action="#"> -->
+      <div class="rows">
+        <span class="label"><label for="">Your Weight (kg)</label></span>
+        <span><input type="number" step="0.01" min="0" id="weight" /> </span>
+      </div>
+      <div class="rows">
+        <span class="label"><label for="">Your Height (m)</label></span>
+        <span
+          ><input type="number" min="infnit" step="0.01" id="Height"
+        /></span>
+      </div>
+      <h3 id="output"></h3>
+      <div id="btn-container">
+        <button class="submit-btn">Calculate</button>
+        <a href="javascript:location.reload(true)" title="refresh">
+          <i class="mdi mdi-refresh"></i
+        ></a>
+      </div>
+      <!-- </form> -->
+      <img src="./assets/bmi.png" alt="bmi" id="indicator" />
+      <img src="./assets/pointer.png" alt="pointer" class="pointer" />
     </div>
 
-  <script src="app.js"></script>  
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
